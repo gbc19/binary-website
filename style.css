@@ -64,11 +64,15 @@ figcaption { color: var(--quiet); font-size: 13px; margin-top: 12px; }
 footer { color: var(--quiet); padding: 30px 0; font-size: 14px; }
 .footer-bar { display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; gap: 14px; }
 .footer-bar small { font-size: inherit; }
-.footer-bar a { justify-self: center; text-decoration: underline; text-underline-offset: 4px; }
+.footer-bar a { justify-self: center; text-decoration: none; }
 .footer-bar span { justify-self: end; }
+.footer-bar > small, .footer-bar > a { align-self: center; }
+.footer-location { text-align: right; }
+.vegas-born { display: block; font-size: .8rem; letter-spacing: .08em; margin-bottom: 2px; }
 @media (max-width: 600px) {
   .footer-bar { grid-template-columns: 1fr; justify-items: center; gap: 6px; }
   .footer-bar span { justify-self: center; }
+  .footer-location { text-align: center; }
 }
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 32px); }
